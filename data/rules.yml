@@ -1,0 +1,83 @@
+version: "2.0"
+
+rules:
+
+- rule: NLU Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_fallback
+
+- rule: respond to intent trinhan
+  steps:
+  - intent: trinhan
+  - action: utter_trinhan
+
+- rule: respond to intent greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: respond to intent amihandsome
+  steps:
+  - intent: amihandsome
+  - action: utter_amihandsome
+
+- rule: respond to intent amipretty
+  steps:
+  - intent: amipretty
+  - action: utter_amipretty
+
+- rule: respond to intent areyoucold
+  steps:
+  - intent: areyoucold
+  - action: utter_areyoucold
+
+- rule: respond to intent areyouhappy
+  steps:
+  - intent: areyouhappy
+  - action: utter_areyouhappy
+
+- rule: respond to intent howareyou
+  steps:
+  - intent: howareyou
+  - action: utter_howareyou
+
+- rule: respond to intent howoldareyou
+  steps:
+  - intent: howoldareyou
+  - action: utter_howoldareyou
+
+- rule: respond to intent howtohavealover
+  steps:
+  - intent: howtohavealover
+  - action: utter_howtohavealover
+
+- rule: respond to intent introduceyourself
+  steps:
+  - intent: introduceyourself
+  - action: utter_introduceyourself
+
+- rule: respond to intent nicetomeetyou
+  steps:
+  - intent: nicetomeetyou
+  - action: utter_nicetomeetyou
+
+- rule: respond to intent whatisyourname
+  steps:
+  - intent: whatisyourname
+  - action: utter_whatisyourname
+
+- rule: respond to intent whatisyourgender
+  steps:
+  - intent: whatisyourgender
+  - action: utter_whatisyourgender
+
+- rule: respond to intent whattimeisit
+  steps:
+  - intent: whattimeisit
+  - action: action_whattimeisit
+
+- rule: respond to intent whereareyoufrom
+  steps:
+  - intent: whereareyoufrom
+  - action: utter_whereareyoufrom

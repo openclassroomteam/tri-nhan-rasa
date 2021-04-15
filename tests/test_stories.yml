@@ -1,0 +1,27 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+version: "2.0"
+stories:
+- story: basic
+  steps:
+  - user: |
+      xin chào
+    intent: greet
+  - action: utter_greet
+  - user: |
+      bạn tên là gì
+    intent: whatisyourname
+  - action: utter_whatisyourname
+  - user: |
+      bạn bao nhiêu tuổi
+    intent: howoldareyou
+  - action: utter_howoldareyou
+  - user: |
+      bạn có khỏe không
+    intent: howareyou
+  - action: utter_howareyou
+  - user: |
+      bây giờ là mấy giờ
+    intent: whattimeisit
+  - action: action_whattimeisit

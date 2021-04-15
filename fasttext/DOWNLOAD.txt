@@ -1,0 +1,1 @@
+Download https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.vi.300.bin.gz and extract cc.vi.300.bin into this directory.

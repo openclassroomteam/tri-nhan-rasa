@@ -1,0 +1,142 @@
+version: "2.0"
+nlu:
+- intent: trinhan
+  examples: |
+    - [trí nhân](myself) à
+    - [trí nhân](myself) ơi
+    - này [trí nhân](myself)
+    - robot ơi
+- intent: greet
+  examples: |
+    - hello
+    - xin chào
+    - chào bạn
+    - xin chào bạn
+    - chào [trí nhân](myself)
+    - xin chào [trí nhân](myself)
+    - chào robot [trí nhân](myself)
+    - xin chào [chí nhân](myself)
+    - hello xin chào
+    - xin chào hello
+    - hello [siêu nhân](myself)
+- intent: amihandsome
+  examples: |
+    - tôi có đẹp trai không
+    - bạn thấy tôi có đẹp trai không
+    - bạn ơi mình có đẹp trai không ạ
+    - em đẹp trai không
+    - bạn có thấy tôi đẹp trai không
+- intent: amipretty
+  examples: |
+    - tôi có xinh không
+    - bạn thấy mình có xinh không
+    - bạn thấy tôi có xinh không
+    - tao có xinh không
+    - mình có xinh không bạn ơi
+    - cho hỏi tôi có xinh không
+    - tôi có xinh gái không
+    - [trí nhân](myself) thấy tôi có xinh không
+    - bạn thấy tôi xinh không
+    - [trí nhân](myself) thấy tôi có xinh gái không
+    - bạn ơi tôi có xinh không ạ
+- intent: areyoucold
+  examples: |
+    - bạn có lạnh không
+    - bạn có thấy lạnh không
+    - [trí nhân](myself) có thấy lạnh không
+    - bạn có lạnh lắm không
+    - bạn lạnh không
+- intent: areyouhappy
+  examples: |
+    - bạn có vui không
+    - bạn có hạnh phúc không
+    - hôm nay bạn vui không
+- intent: howareyou
+  examples: |
+    - bạn có khỏe không
+    - bạn [trí nhân](myself) bạn có khỏe không
+    - bạn khỏe chứ
+    - [trí nhân](myself) có khỏe không
+    - bạn cảm thấy thế nào
+- intent: howoldareyou
+  examples: |
+    - bạn bao nhiêu tuổi
+    - năm nay bạn bao nhiêu tuổi
+    - bao nhiêu tuổi rồi
+    - bạn bao nhiêu tuổi rồi
+    - bao nhiêu tuổi
+    - [trí nhân](myself) bao nhiêu tuổi
+    - năm nay bạn bao nhiêu tuổi rồi
+    - [trí nhân](myself) năm nay bao nhiêu tuổi
+    - bạn mấy tuổi rồi
+    - em mấy tuổi rồi
+    - anh bao nhiêu tuổi
+    - năm nay robot bao nhiêu tuổi rồi
+    - robot năm nay mấy tuổi rồi
+    - bạn năm nay mấy tuổi
+    - [siêu nhân](myself) bao nhiêu tuổi
+    - [chí nhân](myself) bao nhiêu tuổi
+- intent: howtohavealover
+  examples: |
+    - làm thế nào để có người yêu
+    - làm cách nào có người yêu
+    - làm thế nào để tôi có người yêu
+    - làm gì để có người yêu
+    - làm sao để có người yêu
+    - cho tôi hỏi làm thế nào để có người yêu
+    - tôi muốn có người yêu
+- intent: introduceyourself
+  examples: |
+    - giới thiệu bản thân
+    - [trí nhân](myself) giới thiệu về bản thân đi
+    - bạn giới thiệu về bản thân đi
+    - bạn có thể giới thiệu
+    - vui lòng giới thiệu bản thân
+    - bạn có thể giới thiệu về bản thân
+    - giới thiệu về bản thân
+- intent: nicetomeetyou
+  examples: |
+    - rất vui được gặp bạn
+    - rất hân hạnh được gặp bạn
+- intent: whatisyourname
+  examples: |
+    - bạn tên là gì
+    - tên của bạn là gì
+    - bạn có tên không
+    - tôi chưa biết tên của bạn
+    - bạn có thể cho tôi biết tên của bạn được không
+    - tôi có thể gọi bạn là gì
+    - tôi có thể gọi bạn như thế nào
+    - em tên gì
+    - anh tên gì ấy nhỉ
+    - mày tên là gì
+- intent: whatisyourgender
+  examples: |
+    - bạn là nam hay nữ
+    - giới tính của bạn là gì
+    - bạn là con trai hay con gái
+    - bạn là trai hay gái
+    - bạn là đàn ông hay đàn bà
+    - bạn là nam phải không
+    - mày có phải là đàn ông không
+    - mày có phải là phụ nữ không
+    - mày là đàn bà à
+    - bạn là đàn ông à
+    - bạn là nam hay là nữ
+- intent: whattimeisit
+  examples: |
+    - bây giờ là mấy giờ
+    - mấy giờ rồi
+    - bây giờ là mấy giờ rồi
+- intent: whereareyoufrom
+  examples: |
+    - bạn từ đâu đến
+    - bạn đến từ đâu
+    - bạn là người nước nào
+    - bạn quốc tịch nước nào
+    - bạn là người nước nào thế
+    - bạn đến từ nước nào
+- synonym: trí nhân
+  examples: |
+    - chí nhân
+    - siêu nhân
