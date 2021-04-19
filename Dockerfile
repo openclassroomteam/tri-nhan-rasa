@@ -5,13 +5,13 @@ FROM rasa/rasa-sdk:2.5.0
 WORKDIR /app
 
 # Copy any additional custom requirements, if necessary
-# COPY ./requirements-actions.txt ./
+COPY ./requirements-actions.txt ./
 
 # Change back to root user to install dependencies
 USER root
 
 # Install extra requirements for actions code, if necessary
-# RUN pip install -r requirements-actions.txt
+RUN pip install -r requirements-actions.txt
 
 # Copy actions folder to working directory
 COPY ./actions /app/actions
