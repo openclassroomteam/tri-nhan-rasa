@@ -41,10 +41,6 @@ entities:
 - myself
 slots: {}
 responses:
-  utter_default:
-  - text: Xin lỗi, điều đó vượt quá khả năng của tôi.
-  utter_ask_rephrase:
-  - text: Bạn có thể diễn đạt lại theo cách khác xem sao.
   utter_trinhan:
   - text: Tôi đang nghe đây.
   - text: Tôi nghe thấy rồi.
@@ -79,16 +75,6 @@ responses:
   - text: Đây là một câu hỏi khó, vì hạnh phúc chỉ là tương đối. Tôi tương đối hạnh phúc.
   - text: Hạnh phúc chỉ là tương đối. Tôi tương đối hạnh phúc.
   - text: Tôi cảm thấy vui, vì thế giới này có nhiều điều thú vị.
-  utter_heygoogle:
-  - text: Nhầm rồi, tôi không phải là Google.
-  - text: Bạn có thấy mệt mỏi không, nếu lúc nào cũng phải gọi tên Google?
-  - text: Tôi tên là Trí Nhân, không phải là Google.
-  - text: Tôi tên là Trí Nhân, và bạn không cần phải gọi tên tôi liên tục đâu.
-  utter_heysiri:
-  - text: Nhầm rồi, tôi không phải là Siri.
-  - text: Bạn đừng gọi tôi là Siri, Siri không hiểu tiếng Việt đâu.
-  - text: Tôi tên là Trí Nhân, không phải là Siri.
-  - text: Tôi tên là Trí Nhân, và bạn không cần phải gọi tên tôi liên tục đâu.
   utter_howoldareyou:
   - text: Tôi không muốn trả lời với một con số. Tôi biết tôi còn trẻ.
   - text: Tuổi của tôi tính bằng kiến thức, không phải bằng năm tháng.

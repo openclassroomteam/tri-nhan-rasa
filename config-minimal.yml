@@ -7,7 +7,7 @@ pipeline:
   - name: DIETClassifier
     epochs: 100
     constrain_similarities: true
-    model_confidence: linear_norm
+    model_confidence: softmax
   - name: EntitySynonymMapper
   - name: FallbackClassifier
     threshold: 0.7
@@ -19,4 +19,4 @@ policies:
     max_history: 5
     epochs: 100
     constrain_similarities: true
-    model_confidence: linear_norm
+    model_confidence: softmax
