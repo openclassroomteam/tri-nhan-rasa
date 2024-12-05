@@ -3,6 +3,9 @@ language: vi
 pipeline:
   - name: vietnamese_tokenizer.VietnameseTokenizer
     tokenizer: pyvi
+  - name: fasttext_featurizer.FastTextFeaturizer
+    cache_dir: fasttext
+    file: cc.vi.300.bin
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
@@ -10,9 +13,6 @@ pipeline:
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
-  - name: fasttext_featurizer.FastTextFeaturizer
-    cache_dir: fasttext
-    file: cc.vi.300.bin
   - name: DIETClassifier
     epochs: 100
     constrain_similarities: true
@@ -21,9 +21,8 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     constrain_similarities: true
-    model_confidence: softmax
   - name: FallbackClassifier
-    threshold: 0.3
+    threshold: 0.7
     ambiguity_threshold: 0.1
 
 policies:
@@ -32,5 +31,4 @@ policies:
     max_history: 5
     epochs: 100
     constrain_similarities: true
-    model_confidence: softmax
   - name: RulePolicy
