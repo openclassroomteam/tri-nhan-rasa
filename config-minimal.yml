@@ -1,4 +1,9 @@
+recipe: default.v1
+
+assistant_id: tri-nhan
+
 language: vi
+
 pipeline:
   - name: vietnamese_tokenizer.VietnameseTokenizer
   - name: RegexFeaturizer
@@ -12,9 +17,3 @@ pipeline:
     threshold: 0.7
 
 policies:
-  - name: MemoizationPolicy
-  - name: RulePolicy
-  - name: TEDPolicy
-    max_history: 5
-    epochs: 100
-    constrain_similarities: true

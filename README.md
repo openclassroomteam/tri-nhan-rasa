@@ -4,7 +4,7 @@ This project illustrates Tri Nhan's ability to communicate in Vietnamese. This i
 
 This open source version does not include skills such as question answering, weather forecast, solving maths, poetry (Natural Language Generation), device control,... However, it has skills to tell the current time and to offer a search link for out-of-scope questions.
 
-Tested with Rasa Open Source 2.5.0.
+Tested with Rasa Open Source 3.6.20.
 
 ## Installation
 
@@ -15,12 +15,7 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 (venv) $ pip3 install -U pip setuptools wheel
 (venv) $ pip3 install rasa
-(venv) $ pip3 install pyvi
-(venv) $ pip3 install fasttext
-```
-Optional, if you want to use 'underthesea' for tokenizer:
-```
-(venv) $ pip3 install underthesea
+(venv) $ pip3 install pyvi underthesea fasttext
 ```
 
 ## Usage
